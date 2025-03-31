@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحه ورود</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://cdn.fontcdn.ir/font/iransans/Iransans.css');
+
+        body {
+            font-family: 'IranSans', sans-serif;
+        }
+
+        .body-container {
+            background-color: #f3f4f6;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .box-container {
+            width: 495px;
+            height: 555px;
+            border-radius: 15px;
+            background-color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .logo {
+            width: 239px;
+            height: 152px;
+            position: absolute;
+            top: 25px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .input-group {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 364px;
+        }
+
+        .input-group-username {
+            top: 220px;
+        }
+
+        .input-group-password {
+            top: 310px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 10px 40px 10px 10px;
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
+            outline: none;
+        }
+
+        .input-group-password input {
+            border-color: #14b4eb;
+        }
+
+        .input-group .icon {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 18px;
+        }
+
+        .remember-forgot-container {
+            position: absolute;
+            top: 365px;
+            width: 83%;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 12px;
+            padding: 0 20px;
+        }
+
+        .remember-me {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin-right: 10px;
+        }
+
+        .remember-me label {
+            margin-left: 5px;
+        }
+
+        .remember-me input[type="checkbox"] {
+            order: 1;
+            margin-left: 5px;
+        }
+
+        .forgot-password {
+            color: #0b7285;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .login-button {
+            position: absolute;
+            bottom: 100px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 364px;
+            padding: 10px;
+            background-color: #0b7285;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .username-label {
+            position: absolute;
+            right: 16%;
+            top: 195px;
+            font-weight: bold;
+        }
+
+        .password-label {
+            position: absolute;
+            right: 16%;
+            top: 280px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body class="body-container">
+    <div class="box-container">
+        <img src="pak.jpg" alt="PAK Logo" class="logo">
+
+        <div class="username-label">نام کاربری</div>
+        <div class="input-group input-group-username">
+            <span class="icon">👤</span>
+            <input type="text" placeholder="نام کاربری">
+        </div>
+
+        <div class="password-label">رمز عبور</div>
+        <div class="input-group input-group-password">
+            <span class="icon">🔒</span>
+            <input type="password" placeholder="رمز عبور">
+        </div>
+        <div class="remember-forgot-container">
+            <div class="remember-me"> 
+                <label for="remember-me">مرا به خاطر بسپار</label>
+                <input type="checkbox" id="remember-me">
+            </div>
+            <!-- لینک به صفحه دوم -->
+            <a href="page2.html" class="forgot-password">فراموشی رمز عبور</a>
+        </div>
+
+        <button class="login-button">ورود به حساب کاربری</button>
+
+        <div style="position: absolute; bottom: 70px; left: 50%; transform: translateX(-50%); font-size: 14px;">
+            حساب کاربری ندارید؟
+            <a href="#" style="color: #0017AF; font-weight: bold;">ثبت نام</a>
+        </div>
+    </div>
+</body>
+
+</html>
